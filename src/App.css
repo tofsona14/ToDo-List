@@ -54,10 +54,7 @@
 .Date {
   width: auto;
 }
-.dailyPlanText{
-  font-family: 's';
-  font-size: xx-large;
-}
+
 .inputDailyPlan{
   border: solid black;
   border-radius: 10%;
@@ -66,4 +63,25 @@
 }
 .inputDailyPlan::placeholder {
   text-align: center;
+  font-size: x-large;
+  color: rgb(155, 137, 137)
+}
+.InfoDiv--1{
+  font-family: "S";
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+}
+.InfoDiv--2{
+  font-family: "S";
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  margin-right: 12vw;
+}
+.inputOfTime{
+  width: 200px;
+  margin-left: 3vw;
+  border: solid black;
+  border-radius: 10%;
 }
