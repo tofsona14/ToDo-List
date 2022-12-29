@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: 's';
+  src: url("./fonts/Ohio\ Bro\ -\ Free.otf") format('truetype');
+}
+.Div--Date {
+  font-family: 's';
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DateDiv{
+  width: auto;
+  height: auto;
+}
+.Date {
+  width: auto;
+}
+.dailyPlanText{
+  font-family: 's';
+  font-size: xx-large;
+}
+.inputDailyPlan{
+  border: solid black;
+  border-radius: 10%;
+  width: 40%;
+  margin-left: 50px; 
+}
+.inputDailyPlan::placeholder {
+  text-align: center;
+}
