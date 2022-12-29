@@ -18,7 +18,7 @@ import '../fonts/Ohio Bro - Free.otf'
         <label htmlFor='EnterDate'>
             Enter Clock Of Current Daily plan
         </label>
-        <input className='inputOfTime' type="number" min={0} max={24} step={1} placeholder='Enter Time ex:8 (24 Hour standard)'/>
+        <input className='inputOfTime' id='EnterDate' type="number" min={0} max={24} step={1} placeholder='Enter Time ex:8 (24 Hour standard)'/>
       </div>
       <br></br>
       <br></br>
