@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import './addPlan.css';
 import '../fonts/Ohio Bro - Free.otf'
 
 
@@ -20,6 +20,13 @@ import '../fonts/Ohio Bro - Free.otf'
         </label>
         <input className='inputOfTime' type="number" min={0} max={24} step={1} placeholder='Enter Time ex:8 (24 Hour standard)'/>
       </div>
+      <br></br>
+      <br></br>
+        <div className='ButtonsOfAdd'>
+        <button type='submit'>Cancel</button>
+        <button type='submit'>Submit</button>
+        </div>
     </div>
+
   );
 }
