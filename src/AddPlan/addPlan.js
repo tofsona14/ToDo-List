@@ -3,7 +3,7 @@ import "./addPlan.css";
 import "../fonts/Ohio Bro - Free.otf";
 import { ObjectPlan } from "./todoObject/objectPlan";
 
-export const AddPlan = () => {
+export const AddPlan = (props) => {
   const [plan, setPlan] = useState("");
   const [clock, setClock] = useState("");
 
@@ -16,19 +16,17 @@ export const AddPlan = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     const info = {
-      plan: plan,
-      clock: clock,
+      plane: plan,
+      time: clock,
     };
-    console.log(info);
+    props.onSave(info)
   };
 
   const date = new Date();
   const today = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
   return (
     <>
-      <div>
-        <ObjectPlan />
-      </div>
+      
       <form onSubmit={submitHandler} className="DateDiv">
         <div className="Div--Date">
           <h1 className="Date">Date:{today}</h1>
