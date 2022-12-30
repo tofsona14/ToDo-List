@@ -13,7 +13,7 @@ export const ObjectPlan = () => {
   const [fullInfo, setFullInfo] = useState(object)
   const AddInfo = (arg) => {
     setFullInfo((prev) => {
-      return [arg, ...prev,]
+      return [...prev, arg]
     })
   }
 
