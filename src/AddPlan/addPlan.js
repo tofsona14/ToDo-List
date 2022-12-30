@@ -5,7 +5,11 @@ import '../fonts/Ohio Bro - Free.otf'
 
  export const AddPlan = () => {
     const date = new Date();
-   const today = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
+    const today = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
+    const submit = (event) => {
+        event.preventDefault();
+        console.log(event)
+    }
   return (
     <div className='DateDiv'>
       <div className='Div--Date'><h1 className='Date'>Date:{today}</h1></div>
@@ -23,8 +27,7 @@ import '../fonts/Ohio Bro - Free.otf'
       <br></br>
       <br></br>
         <div className='ButtonsOfAdd'>
-        <button type='submit'>Cancel</button>
-        <button type='submit'>Submit</button>
+        <button />
         </div>
     </div>
 
