@@ -1,3 +1,24 @@
 .outputTexts {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "s";
+  width: 100vw;
+}
+.ourTodo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "s";
+}
+.both {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.TodoList {
+  color: red;
+  font-size: 40px;
 }
