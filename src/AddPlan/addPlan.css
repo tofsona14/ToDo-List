@@ -1,62 +1,69 @@
 @font-face {
-    font-family: 's';
-    src: url("../fonts/Ohio\ Bro\ -\ Free.otf") format('truetype');
-  }
-  .Div--Date {
-    font-family: 's';
-    border-radius: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .DateDiv{
-    width: auto;
-    height: auto;
-    margin-top: 15%;
-  }
-  .Date {
-    width: auto;
-  }
-  
-  .inputDailyPlan{
-    border: solid black;
-    border-radius: 10%;
-    width: 40%;
-    margin-left: 50px; 
-  }
-  .inputDailyPlan::placeholder {
-    text-align: center;
-    font-size: x-large;
-    color: rgb(155, 137, 137)
-  }
-  .InfoDiv--1{
-    font-family: "S";
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-  }
-  .InfoDiv--2{
-    font-family: "S";
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    margin-right: 12vw;
-  }
-  .inputOfTime{
-    width: 200px;
-    margin-left: 3vw;
-    border: solid black;
-    border-radius: 10%;
+  font-family: "s";
+  src: url("../fonts/Ohio\ Bro\ -\ Free.otf") format("truetype");
 }
-.ButtonsOfAdd{
-    display: flex;
-  
+.Div--Date {
+  font-family: "s";
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DateDiv {
+  width: auto;
+  height: auto;
+  margin-top: 15%;
+}
+.Date {
+  width: auto;
+}
+
+.inputDailyPlan {
+  border: solid black;
+  border-radius: 10%;
+  width: 40%;
+  margin-left: 50px;
+}
+.inputDailyPlan::placeholder {
+  text-align: center;
+  font-size: x-large;
+  color: rgb(155, 137, 137);
+}
+.InfoDiv--1 {
+  font-family: "S";
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+}
+.InfoDiv--2 {
+  font-family: "S";
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  margin-right: 12vw;
+}
+.inputOfTime {
+  width: 200px;
+  margin-left: 3vw;
+  border: solid black;
+  border-radius: 10%;
+}
+.ButtonsOfAdd {
+  display: flex;
+
   text-align: center;
   justify-content: space-around;
 }
-  .ButtonsOfAdd button {
-    background-color: rgb(203, 193, 193);
-    border: rgb(194, 188, 188);
-    border-radius: 40% ;
-    font-size: large;
-  }
+.ButtonsOfAdd button {
+  background-color: rgb(203, 193, 193);
+  border: rgb(194, 188, 188);
+  border-radius: 40%;
+  font-size: large;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+.ButtonsOfAdd button:hover {
+  background-color: rgb(104, 99, 99);
+  color: white;
+}
