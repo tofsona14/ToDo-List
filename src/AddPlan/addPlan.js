@@ -20,6 +20,8 @@ export const AddPlan = (props) => {
       time: clock,
     };
     props.onSave(info)
+    setPlan("")
+    setClock("")
   };
 
   const date = new Date();
@@ -39,6 +41,7 @@ export const AddPlan = (props) => {
           <input
             onChange={planChangeHandler}
             className="inputDailyPlan"
+            value={plan}
             type="text"
             id="EnterText"
             maxLength={50}
@@ -53,6 +56,7 @@ export const AddPlan = (props) => {
             className="inputOfTime"
             id="EnterDate"
             type="number"
+            value={clock}
             min={0}
             max={24}
             step={1}
@@ -62,8 +66,8 @@ export const AddPlan = (props) => {
         <br></br>
         <br></br>
         <div className="ButtonsOfAdd">
-          <button className="firstButton">Add</button>
-          <button className="secondButton">Cancel</button>
+          <button type="submit" className="firstButton">Add</button>
+          <button type="cancel"className="secondButton">Cancel</button>
         </div>
       </form>
     </>
