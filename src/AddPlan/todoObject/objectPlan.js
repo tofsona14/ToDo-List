@@ -25,7 +25,7 @@ export const ObjectPlan = () => {
         <h1 className="TodoList">Your Todo List</h1>
       </div>
       {fullInfo.map((x) => (
-        <OutputTodo key={fullInfo.indexOf(x) + 1} id={fullInfo.indexOf(x) + 1} plane={x.plane} time={x.time} />
+        <OutputTodo key={fullInfo.indexOf(x) + 1} id={fullInfo.indexOf(x) +1} plane={x.plane} time={x.time} />
         
       ))}
       <AddPlan onSave = {AddInfo}/>
