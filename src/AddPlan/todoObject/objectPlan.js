@@ -6,6 +6,7 @@ export const ObjectPlan = () => {
   
   const object = [
     {
+      ob: 0,
       id: 1,
       plane: "Wake Up early",
       time: "08:00",
