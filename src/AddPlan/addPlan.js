@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import "./addPlan.css";
 import "../fonts/Ohio Bro - Free.otf";
-import { ObjectPlan } from "./todoObject/objectPlan";
 
 export const AddPlan = (props) => {
   const [plan, setPlan] = useState("");
   const [clock, setClock] = useState("");
-
+  var s;
+  const CancelButton = () => {
+    s = false
+  }
+  const AddButton = () => {
+    s = true
+  }
   const planChangeHandler = (arg) => {
     setPlan(arg.target.value);
   };
@@ -15,11 +20,16 @@ export const AddPlan = (props) => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    const info = {
-      plane: plan,
-      time: clock,
-    };
-    props.onSave(info)
+    if(s === true) {
+
+      const info = {
+        plane: plan,
+        time: clock,
+      };
+      props.onSave(info)
+    } else {
+      console.log('you canceled')
+    }
     setPlan("")
     setClock("")
   };
@@ -44,6 +54,7 @@ export const AddPlan = (props) => {
             value={plan}
             type="text"
             id="EnterText"
+            minLength={6}
             maxLength={50}
             placeholder="you can type only 50 word"
           />
@@ -66,8 +77,8 @@ export const AddPlan = (props) => {
         <br></br>
         <br></br>
         <div className="ButtonsOfAdd">
-          <button type="submit" className="firstButton">Add</button>
-          <button type="cancel"className="secondButton">Cancel</button>
+          <button onClick={AddButton} type="submit" className="firstButton">Add</button>
+          <button onClick={CancelButton} className="secondButton">Cancel</button>
         </div>
       </form>
     </>
