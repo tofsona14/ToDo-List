@@ -11,7 +11,6 @@ export const ObjectPlan = () => {
       time: "08:00",
     },
   ];
-  var nOfId = 0
   const [fullInfo, setFullInfo] = useState(object)
   const AddInfo = (arg) => {
     setFullInfo((prev) => {
@@ -19,13 +18,15 @@ export const ObjectPlan = () => {
     })
   }
 
+  
+
   return (
     <div>
       <div className="ourTodo">
         <h1 className="TodoList">Your Todo List</h1>
       </div>
       {fullInfo.map((x) => (
-        <OutputTodo key={fullInfo.indexOf(x) + 1} id={fullInfo.indexOf(x) +1} plane={x.plane} time={x.time} />
+        <OutputTodo key={fullInfo.indexOf(x) +1} id={fullInfo.indexOf(x) +1} plane={x.plane} time={x.time} />
         
       ))}
       <AddPlan onSave = {AddInfo}/>
