@@ -4,7 +4,7 @@ import "./outputTodo.css";
 export const OutputTodo = (props) => {
   return (
     <div className="outputTexts">
-        Hello
+        
       <div className="both">
         <h1>
           <span>{props.id} . </span>
