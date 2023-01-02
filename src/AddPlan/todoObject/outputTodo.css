@@ -54,6 +54,23 @@ body{
 
 }
 .dailyPlanCondition{
+  display: relative;
   position: absolute;
   right: 0;
+}
+.ss {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.bothDailyPlanCondition{
+  
+  width: 30vw;
+  position: absolute;
+  right: 0;
+}
+.oo {
+  height: 13vh;
+  position: relative;
 }

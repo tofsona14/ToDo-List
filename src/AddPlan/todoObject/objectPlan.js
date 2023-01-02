@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { OutputTodo } from "./outputTodo";
 import { AddPlan } from "../addPlan";
 import "./outputTodo.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import 'font-awesome/css/font-awesome.min.css';
 export const ObjectPlan = () => {
+  //https://chat.openai.com/chat
   
   const object = [
     {
@@ -36,7 +40,14 @@ export const ObjectPlan = () => {
       <div className="TodoSecondLine">
         <h2 className="dailyPlans">Your Daily Plans</h2>
         <h2 className="dailyPlanTime">Current Plan Time</h2>
-        <h2 className="dailyPlanCondition">Current Plan Condition</h2>
+        <div className="bothDailyPlanCondition">
+          <h2 className="dailyPlanCondition">Current Plan Condition</h2>
+          <div className="oo">
+            <div className="ss">
+            <FontAwesomeIcon icon={faCheck} />
+            </div>
+          </div>
+        </div>
       </div>
       {fullInfo.map((x) => 
 
