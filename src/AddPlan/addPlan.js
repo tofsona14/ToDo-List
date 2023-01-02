@@ -45,8 +45,7 @@ export const AddPlan = (props) => {
         </div>
         <div className="InfoDiv--1">
           <label htmlFor="EnterText" className="g">
-            {" "}
-            Type Daily Plan{" "}
+            Type Daily Plan
           </label>
           <input
             onChange={planChangeHandler}

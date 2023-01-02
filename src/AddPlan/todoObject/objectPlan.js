@@ -19,10 +19,12 @@ export const ObjectPlan = () => {
     })
   }
   const Statement = (x) => {
-    if (Number(x.time) < 10) {
+    if (Number(x.time) < 10 && Number(x.time) !== 0) {
       return `0${x.time}:00`
-    }else {
+    }else if(Number(x.time) > 10) {
       return `${x.time}:00`
+    }else {
+      return `00:00`
     }
   }
 
@@ -30,6 +32,11 @@ export const ObjectPlan = () => {
     <div>
       <div className="ourTodo">
         <h1 className="TodoList">Your Todo List</h1>
+      </div>
+      <div className="TodoSecondLine">
+        <h2 className="dailyPlans">Your Daily Plans</h2>
+        <h2 className="dailyPlanTime">Current Plan Time</h2>
+        <h2 className="dailyPlanCondition">Current Plan Condition</h2>
       </div>
       {fullInfo.map((x) => 
 
