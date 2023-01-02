@@ -13,12 +13,27 @@
   font-family: "s";
 }
 .both {
-  width: 600px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
 }
 
 .TodoList {
   color: red;
   font-size: 40px;
 }
+.bothDiv{
+  margin-right: 3vw;
+  left: 0;
+  width: 50%;
+}
+.bothTime{
+  width: auto;
+  margin-right: 20vw;
+}
+.bothCheckbox{
+  width: auto;
+  margin-right: 10vw;
+}
+
