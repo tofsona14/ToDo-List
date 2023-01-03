@@ -30,14 +30,18 @@ export const OutputTodo = (props) => {
     <div className="outputTexts">
       <div className="both">
         <div className="bothDiv">
-        <h1>
-          <span>{props.id} . </span>
-          {props.plane}
-        </h1>
+          <h1>
+            <span>{props.id} . </span>
+            {props.plane}
+          </h1>
         </div>
+        <div className="timeDiv">
         <h1 className="bothTime">{props.time}</h1>
-        <input id={props.id} onClick={notDoneCheckbox} className="bothCheckbox" type='checkbox'></input>
-        <input onClick={doneCheckbox} className="bothCheckbox" type='checkbox'></input>
+        </div>
+        <div className="bothInput">
+          <input id={props.id} onClick={notDoneCheckbox} className="firstCheckbox" type='checkbox'></input>
+          <input onClick={doneCheckbox} className="secondCheckbox" type='checkbox'></input>
+        </div>
       </div>
     </div>
   );

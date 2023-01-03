@@ -35,27 +35,34 @@ export const ObjectPlan = () => {
 
   return (
     <div>
-      <div className="ourTodo">
-        <h1 className="TodoList">Your Todo List</h1>
-      </div>
-      <div className="TodoSecondLine">
-        <h2 className="dailyPlans">Your Daily Plans</h2>
-        <h2 className="dailyPlanTime">Current Plan Time</h2>
-        <div className="bothDailyPlanCondition">
-          <h2 className="dailyPlanCondition">Current Plan Condition</h2>
-          <div className="oo">
-            <div className="ss">
-            <FontAwesomeIcon className="hourGlass" icon={faHourglassEnd} />
-            <FontAwesomeIcon className="Check" icon={faCheck} />
+      <div className="wholeTodo">
+        <div className="ourTodo">
+          <h1 className="TodoList">Your Todo List</h1>
+        </div>
+        <div className="TodoSecondLine">
+          <h2 className="dailyPlans">Your Daily Plans</h2>
+          <h2 className="dailyPlanTime">Current Plan Time</h2>
+          <div className="bothDailyPlanCondition">
+            <h2 className="dailyPlanCondition">Current Plan Condition</h2>
+            <div className="oo">
+              <div className="ss">
+              <FontAwesomeIcon className="hourGlass" icon={faHourglassEnd} />
+              <FontAwesomeIcon className="Check" icon={faCheck} />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      {fullInfo.map((x) => 
+       </div>
+          <div className="buttonsOfTodo">
+            <button className="cancelButton">cancel</button>
+            <button className="changeButton">change</button>
+          </div>
+        {fullInfo.map((x) => 
 
-        <OutputTodo key={fullInfo.indexOf(x) + 1} id={fullInfo.indexOf(x) + 1} plane={x.plane} time={Statement(x)} />
-        
-      )}
+          <OutputTodo key={fullInfo.indexOf(x) + 1} id={fullInfo.indexOf(x) + 1} plane={x.plane} time={Statement(x)} />
+        )}
+        <br></br>
+        <br></br>
+      </div>
       <AddPlan onSave = {AddInfo}/>
     </div>
   );
