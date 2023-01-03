@@ -35,7 +35,7 @@ export const AddPlan = (props) => {
   };
 
   const date = new Date();
-  const today = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+  const today = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
   return (
     <>
       
