@@ -4,6 +4,7 @@ import { AddPlan } from "../addPlan";
 import "./outputTodo.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faHourglassEnd } from "@fortawesome/free-solid-svg-icons";
 import 'font-awesome/css/font-awesome.min.css';
 export const ObjectPlan = () => {
   //https://chat.openai.com/chat
@@ -44,7 +45,8 @@ export const ObjectPlan = () => {
           <h2 className="dailyPlanCondition">Current Plan Condition</h2>
           <div className="oo">
             <div className="ss">
-            <FontAwesomeIcon icon={faCheck} />
+            <FontAwesomeIcon className="hourGlass" icon={faHourglassEnd} />
+            <FontAwesomeIcon className="Check" icon={faCheck} />
             </div>
           </div>
         </div>

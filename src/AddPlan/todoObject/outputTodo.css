@@ -60,9 +60,9 @@ body{
 }
 .ss {
   position: absolute;
-  bottom: 0;
+  width: 8.75vw;
+  height: 10vh;
   right: 0;
-
 }
 .bothDailyPlanCondition{
   
@@ -73,4 +73,14 @@ body{
 .oo {
   height: 13vh;
   position: relative;
+}
+.hourGlass{
+  position: absolute;
+  bottom: 0;
+
+}
+.Check {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
