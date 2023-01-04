@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faHourglassEnd } from "@fortawesome/free-solid-svg-icons";
 import 'font-awesome/css/font-awesome.min.css';
-export const ObjectPlan = () => {
+export const ObjectPlan = (props) => {
   //https://chat.openai.com/chat
   
   const object = [
@@ -22,6 +22,7 @@ export const ObjectPlan = () => {
     setFullInfo((prev) => {
       return [...prev, arg]
     })
+    props.OnSaves(fullInfo)
   }
   const Statement = (x) => {
     if (Number(x.time) < 10 && Number(x.time) !== 0) {

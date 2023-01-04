@@ -8,11 +8,11 @@ const Main = () => {
             <div className='main-child'>
                 <div className='main-button'>
                     <div>
-                        <button>Daily Plan</button>
+                        <button type="button" disabled>Daily Plan</button>
                     </div>
                     <br></br>
                     <div>
-                        <button>Add Plan</button>
+                        <button type='button' disabled>Add Plan</button>
                     </div>
                 </div>
             </div>
