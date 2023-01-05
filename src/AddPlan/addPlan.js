@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./addPlan.css";
 import "../fonts/Ohio Bro - Free.otf";
+import { Link } from "react-router-dom";
+
 
 export const AddPlan = (props) => {
   const [plan, setPlan] = useState("");
@@ -23,6 +25,7 @@ export const AddPlan = (props) => {
     if(s === true) {
 
       const info = {
+        
         plane: plan,
         time: clock,
       };
@@ -79,6 +82,8 @@ export const AddPlan = (props) => {
           <button onClick={AddButton} type="submit" className="firstButton">Add</button>
           <button onClick={CancelButton} className="secondButton">Cancel</button>
         </div>
+        <button><Link to="/Daily-Plan">add</Link></button>
+        <button><Link to="/">back</Link></button>
       </form>
     </>
   );

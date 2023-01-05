@@ -31,7 +31,7 @@ export const OutputTodo = (props) => {
       <div className="both">
         <div className="bothDiv">
           <h1>
-            <span>{props.id} . </span>
+            <span>{props.id}  </span>
             {props.plane}
           </h1>
         </div>

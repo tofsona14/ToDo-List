@@ -33,7 +33,7 @@ export const ObjectPlan = (props) => {
       return `00:00`
     }
   }
-
+  console.log(fullInfo)
   return (
     <div>
       <div className="wholeTodo">
@@ -58,7 +58,6 @@ export const ObjectPlan = (props) => {
             <button className="changeButton">change</button>
           </div>
         {fullInfo.map((x) => 
-
           <OutputTodo key={fullInfo.indexOf(x) + 1} id={fullInfo.indexOf(x) + 1} plane={x.plane} time={Statement(x)} />
         )}
         <br></br>

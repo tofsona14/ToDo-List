@@ -6,18 +6,18 @@ import 'font-awesome/css/font-awesome.min.css';
 export const ObjectPlans = (props) => {
   //https://chat.openai.com/chat
   
-  const object = [
-    {
-      ob: 0,
-      id: 1,
-      plane: "Wake Up early",
-      time: 8,
-    },
-  ];
-  const [fullInfo, setFullInfo] = useState(object)
+  const object = {
+    id:0,
+    time:4,
+    plane:'sarancha'
+  }
+  const [fullInfo, setFullInfo] = useState([object])
   const AddInfo = (arg) => {
     setFullInfo((prev) => {
-      return [...prev, arg]
+      return [
+        ...prev,
+        arg
+      ]
     })
     props.OnSaves(fullInfo)
   }
