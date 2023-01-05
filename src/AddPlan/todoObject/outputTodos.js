@@ -3,7 +3,7 @@ import "./outputTodo.css";
 import { OutputTodo } from "./outputTodo";
 
 export const OutputTodos = (props) => {
-    const [info, setInfo] = useState([])
+    const [info, setInfo] = useState()
     setInfo(props.Object)
   return(
         <>

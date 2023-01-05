@@ -8,11 +8,12 @@ import { ObjectPlans } from './AddPlan/todoObject/objectPlans';
 import { BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 
 function App() {
-  const [info, setInfo] = useState('')
+  const [info, setInfo] = useState([])
   const DataAccumulation = (arg) => {
-    setInfo(arg)
-    console.log(arg)
-    console.log(info)
+    setInfo((prev) => {
+      return {...prev, arg}
+
+    })
   }
   return(
     <div>
